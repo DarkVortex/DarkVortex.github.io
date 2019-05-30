@@ -3,7 +3,21 @@
   <meta charset="utf-8">
   <title>Arnav Prasad</title>
   <link rel="stylesheet" href="../style/styles.css">
+  <link rel="stylesheet" href="lights.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDy2-rSijSaO_OdmS25Zl444h-QeCZ4oZI",
+    authDomain: "darkevortexwebsite.firebaseapp.com",
+    databaseURL: "https://darkevortexwebsite.firebaseio.com",
+    projectId: "darkevortexwebsite",
+    storageBucket: "darkevortexwebsite.appspot.com",
+    messagingSenderId: "674547137848"
+  };
+  firebase.initializeApp(config);
+  </script>
 </head>
 <body>
 	<div id='mainContent'>
@@ -15,9 +29,20 @@
 		</div>
 		<hr class="longLine">
 		<div class='infobox' id='instructions'>
-			<p>This page will allow you to control traffic lights for the UDSSC. We currently have 1 intersection, with 4 lights.</p>
+			<p>This page will allow you to control traffic lights for the UDSSC. We currently have 1 intersection, with 2 lights.</p>
+			<div class='lightContainer' id='light1'>
+				<span class='light red on 1' id="topLight"></span><br><br>
+				<span class='light yel off 1' id='midLight'></span><br><br>
+				<span class='light grn off 1' id='botLight'></span>
+			</div>
+			<div class='lightContainer' id='light2'>
+				<span class='light red on 2' id="topLight"></span><br><br>
+				<span class='light yel off 2' id='midLight'></span><br><br>
+				<span class='light grn off 2' id='botLight'></span>
+			</div>
 		</div>
 	</div>
 </body>
 </html>
   <script src="../js/scripts.js"></script>
+  <script src="lights.js"></script>

@@ -1,0 +1,36 @@
+.lightContainer .light{
+	height: 50px;
+  	width: 50px;
+  	border-radius: 50%;
+  	display: inline-block;
+  	cursor: pointer;
+  	border: 1px solid black;
+}
+
+.lightContainer .red{
+	background-color: #ff0000;
+}
+
+.lightContainer .yel{
+	background-color: #ffff00;
+}
+.lightContainer .grn{
+	background-color: #00ff00;
+}
+
+.lightContainer .on{
+	opacity: 1;
+}
+
+.lightContainer .off{
+	opacity: .5;
+}
+
+.lightContainer{
+	text-align: center;
+	padding: auto;
+	margin: auto;
+	width: 60px;
+	height: 210px;
+	border: 1px solid black
+}
